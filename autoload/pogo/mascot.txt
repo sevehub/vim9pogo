@@ -1,0 +1,65 @@
+palette dcd3c9,a29c99,767176,2c668d,b0483e,514950,1a517b,124065,d52d1f,ca2519,99221d,4e272b,1e2228,0d2b45,5e1212
+                          
+         BAAAA            
+        CACFCBBAAA        
+       CCAMMMMMMFCBAA     
+      CCBAMMFBFLLMMMCAA   
+      CCBBMMLABOEBCMMFA   
+      CCBCMMFAFOAABMMFA   
+      CCAFMOBACAAFMMMCA   
+      CCAMMMAAABLOOMMB    
+      CCAMMMAACLOOMMMA    
+      CBBMMMBFKCCCFMMA    
+      CBBCMMMMFFFCFMFA    
+      LFBBAABCFMMMMMB     
+     KJJKOLCBAAABCFFA     
+    KIIIIJOKLFFFCBBAA     
+   JIIIIIJJKKFKKOO        
+  JIIIIJJIIIKJKKKKK       
+ KIJJJIKKIIIJIJIJKJK      
+ IIJJKKOKJIIIIIJIJJIJ     
+OKJIIIKOKIIJJJIJIKJIIK    
+ KKIIIJKKKIIJJIIJKJJJJK   
+ OKKJJJJKJIJJJJIKKKKJJI   
+  OKKKJEBEKJJJJJOOOJIIIJ  
+    OOOBAAAEKKJJ  OKJJIK  
+    OOMMBAACLKKKO BBEJJ   
+    OMNNFCEMMMFMMMAAAOO   
+    GDDGHHHHHNFNNLBABM    
+   DDDDDGHHHHLINHFFF      
+  GD DDDGHHNNKEHHGGDD     
+ HDDDGGGGHHNNKEHHGDDDD    
+ HDDDGHNHNNNNJEHHGGGDDD   
+  HGGGHHNN  FIFHHHGGGDDD  
+  HHGHDG    FIE  NNHHGGDD 
+   HHHGD    LI     NHHGDD 
+   HHGHGG   KI    NHHGGDH 
+    HGGHH   KE   NHGGGGH  
+     NHH    KE   HGGHGH   
+     HH    HJE  NNHHGG    
+      GFBK FIE HHHGGG     
+       KEEELIF CG HH      
+       FEEELIFEBC DH      
+       FEEKKIFJEE         
+       FEIEKEEEEE         
+       FKIFKEKEE          
+      LEIJFJEKIE          
+      C   FIEFIE          
+      FB FLILCEEE         
+         MMKMFB           
+          MM  FB          
+          MM              
+          MM              
+         MLM              
+         MM               
+         OK               
+         CF               
+         C                
+         B                
+         B                
+         C                
+         B                
+        NF                
+        MM                
+       MMM                
+                          

@@ -1,0 +1,184 @@
+*pogo.txt*  Start page and dashboard: recent files, viminfo, errors, plugins
+
+                         VIM9POGO  REFERENCE MANUAL
+
+==============================================================================
+CONTENTS                                                               *pogo-contents*
+
+    1. Introduction ............................ |pogo-introduction|
+    2. Requirements and installation ........... |pogo-requirements|
+    3. Usage ................................... |pogo-usage|
+    4. Sections ................................ |pogo-sections|
+    5. The mascot .............................. |pogo-mascot|
+    6. Plugin manager data ..................... |pogo-manager|
+    7. Options ................................. |pogo-options|
+    8. Limitations ............................. |pogo-limitations|
+
+==============================================================================
+1. INTRODUCTION                                                           *pogo-introduction*
+
+Vim9pogo is a start page for Vim in the spirit of vim-startify. It shows recent
+files from |viminfo|, the state of viminfo, errors from |:messages|, the state
+of the plugins and the run times of the plugin manager. It is written in
+|vim9script|.
+
+==============================================================================
+2. REQUIREMENTS AND INSTALLATION                                                           *pogo-requirements*
+
+Vim 9.0 or later with 'encoding' set to utf-8; Vim 9.2 is the target. The page
+opens at |VimEnter|, so the plugin has to be loaded at startup. With vim9-plum
+add it to the list file, without the "ft" key: >
+    vim9script
+    g:pogo_bookmarks = ['~/.vimplugins']
+    g:plum_plugins = [
+      {url: 'sevehub/vim9pogo'},
+    ]
+<
+==============================================================================
+3. USAGE                                                                  *pogo-usage*
+
+The page opens by itself when Vim is started without a file and without input
+from a pipe, see |g:pogo_autostart|.
+
+                                                                       *:Pogo*
+:Pogo[!]                Open the page in the current window. With ! it opens
+                        in a new tab page. A buffer with changes is not
+                        replaced.
+
+                                                                *:PogoRefresh*
+:PogoRefresh            Draw the page again.
+
+Keys in the page, which is a |nomodifiable| buffer with filetype pogo:
+
+    1-9, 0, a-z   Open the entry with that key. The key is shown in brackets in
+                  front of each entry.
+    <CR>          Open the entry under the cursor.
+    s v t         Open the entry under the cursor in a split, a vertical split
+                  or a tab page.
+    e             Start an empty buffer.
+    i u           Run |:PlumInstall| or |:PlumUpdate|, when vim9-plum is
+                  installed.
+    m             Show the whole |:messages| text in a split.
+    r             Draw the page again.
+    q             Close the page, or quit when it is the only window.
+
+==============================================================================
+4. SECTIONS                                                               *pogo-sections*
+
+Recent files
+    Taken from |v:oldfiles|. Files that no longer exist, COMMIT_EDITMSG, swap
+    files, files below /tmp and the runtime files of Vim are skipped, see
+    |g:pogo_skip|. A second list holds the recent files below the current
+    directory, and |g:pogo_bookmarks| adds fixed entries.
+
+viminfo
+    The file in use, its size and age, and the number of recent files,
+    commands, searches, global marks and registers. A warning is shown when
+    viminfo is disabled or the file has not been written yet.
+
+Messages
+    Errors and warnings found in |:messages|, with the file and line that Vim
+    was processing. An entry with a known place opens that file at that line.
+    Lines that start with a tag from |g:pogo_message_tags| count as warnings.
+    The parser relies on the English message texts; use ":language messages C"
+    with a translated Vim.
+
+Plugins
+    Every plugin as loaded, waiting for its filetype, optional or missing, with
+    its pin and its load time. The list comes from |pogo-manager| and falls
+    back to the package directories. Problems are listed first.
+
+Runtime
+    The time that the plugin manager needed to activate the plugins, the
+    slowest plugins, and the duration and result of the last install or
+    update. The number of sourced scripts and of 'runtimepath' entries.
+
+==============================================================================
+5. THE MASCOT                                                                 *pogo-mascot*
+
+A character with a monitor for a head, on a pogo stick, is shown beside the
+page when the terminal is wide enough. |g:pogo_logo| selects the form:
+
+    'ascii'   Shaded ASCII art, colored cell by cell from the original image.
+              It needs about 130 columns.
+    'pixel'   A compact version drawn with half-block characters and text
+              properties. It needs about 110 columns.
+    'auto'    The larger form when it fits, then the smaller one, then none.
+    0         No mascot.
+
+The sources are assets/pogo.jpg and assets/ascii-art.txt. The data that is read
+at run time is autoload/pogo/ascii.txt and autoload/pogo/mascot.txt.
+
+==============================================================================
+6. PLUGIN MANAGER DATA                                                                *pogo-manager*
+
+The page calls plum#Stats() of vim9-plum. It returns a dictionary with
+"version" (the commit of the manager), "activate_ms" (milliseconds spent in the
+activation at startup), "last_run" (action, ms, ok, skipped, failed and when of
+the last install or update, or an empty dictionary) and "plugins", a list with
+name, dir, installed, commit, ft, loaded and ms for every listed plugin. Any
+other manager can offer the same dictionary under the same function name.
+
+==============================================================================
+7. OPTIONS                                                                *pogo-options*
+
+                                                             *g:pogo_autostart*
+g:pogo_autostart        Number (default 1)
+                        Open the page when Vim starts without a file.
+
+                                                              *g:pogo_sections*
+g:pogo_sections         List (default ['recent', 'here', 'bookmarks', 'plugins',
+                        'runtime', 'viminfo', 'messages'])
+                        The sections to show, in order.
+
+                                                                 *g:pogo_width*
+g:pogo_width            Number (default 76)
+                        Width of the text column.
+
+                                                                *g:pogo_recent*
+g:pogo_recent           Number (default 8)
+                        Number of recent files.
+
+                                                           *g:pogo_recent_here*
+g:pogo_recent_here      Number (default 5)
+                        Number of recent files below the current directory.
+
+                                                                  *g:pogo_skip*
+g:pogo_skip             List (default ['COMMIT_EDITMSG$', '\.git/', '^/tmp/',
+                        '\.swp$'])
+                        Regular expressions for paths that are left out. The
+                        runtime directory of Vim is always skipped.
+
+                                                             *g:pogo_bookmarks*
+g:pogo_bookmarks        List (default [])
+                        Files and folders for the bookmark list.
+
+                                                           *g:pogo_plugins_max*
+g:pogo_plugins_max      Number (default 12)
+                        Rows of the plugin list. The rest is counted.
+
+                                                              *g:pogo_messages*
+g:pogo_messages         Number (default 6)
+                        Number of errors and warnings shown.
+
+                                                          *g:pogo_message_tags*
+g:pogo_message_tags     List (default ['plum', 'inkpack', 'vimhud', 'pogo'])
+                        Message prefixes that count as plugin warnings.
+
+                                                                 *g:pogo_logo*
+g:pogo_logo             String or number (default 'auto')
+                        'auto', 'ascii', 'pixel' or 0, see |pogo-mascot|.
+
+==============================================================================
+8. LIMITATIONS                                                            *pogo-limitations*
+
+The data sources, the layout, the keys and the link to vim9-plum were checked
+headless on Vim 9.1 under Linux. How the colors look in a real terminal, the
+GUI and Windows have not been tried.
+
+The ASCII mascot assumes a dark background. Load times are measured around
+|:packadd|, so lazy loading that happens later is not included. The page is a
+buffer that is drawn once; it follows a resize, and "r" refreshes it.
+
+==============================================================================
+ vim:tw=78:ts=8:ft=help:norl:

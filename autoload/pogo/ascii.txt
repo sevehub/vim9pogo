@@ -1,0 +1,118 @@
+palette d7cec5,999da1,6b879d,5c89a9,7f7f80,7d7f82,7a8086,708394,69859d,de5a4d,e55549,d25d54,c8615a,ad6d6a,ba6662,937676
+              +:--=                     
+            *+::*+=-:...::-             
+           **+.*@@@@@@@@@#+=:..:-       
+          **+=:%@@@-:+#@@@@@@@@#=:..    
+         ++++-:@@@@#..-%@@-:-*@@@@#.    
+         *+*+:*@@@@=..*@#-..:*@@@@+.    
+         ++*=:@@@@#:.:*...:%@@@@@@=:    
+        *+*+:=@@@@%.....=%@@@@@@@%:=    
+        *+*+:*@@@@=..-#%*%%@@@@@@+:     
+         *+=:%@@@@++@%%:#-+:-+@@@:-     
+          *=::--+%@@@@@@@@%%=@@@*:      
+        #%@@@%*+-:::::=+*%@@@@@@--      
+      %%#####%@@@@@@%*=-::::-::-:       
+    #%%%######%%@@@@%*%@@@@+ +++=       
+   %#####%%%%%####%*%%%#@@@@@           
+ *%#%#%%#%#%@%%#####+##+##@@@%*         
+#%%%%%#%@%@@@%%%###%#=#%*##%%%%#*       
+%%%%#####@@@@%###%%#%%#%#*%@%%####      
+%@@%%#####%@@@@%%%%%%%%###%@@%%@%%##    
+  @@@%%#%%#%@@%%#%%%%#%%#%@@@@@%%%%##   
+   %@@@@%%#=-+#%@%%#%%%%%%  @@@%######  
+      @@@@%+::.::+#%@@%%%#   %@%#%%#%   
+      #@@@@@*-::-+@@@#%@@%  =:::=%%%*   
+      %@@@@@%%%#*@@@@@%%@@@@*-:::*%     
+     #######%%@@@@@%@@%@@@%***=-+@      
+   ###* #####%%%@@@@@%*%@@@@@%%%        
+  ###  ##%####%@@@@@@%+@@@%%#####*      
+ ######%@%%@%%@@@@@@@#*@@@%#########*   
+ #@###%%%#%@@@@#   %@*#@@@@%%#########* 
+  %@@%%%%%%#       %%+#   #%@@@%%#### #*
+   #@@%%%###       %%*        @@@@@%####
+    #@@%%@%%#      %#*       %@@@@%%%#% 
+      @%##%%@%     %*#      @@%##%%%%%  
+       @@%@%###   %%*#     @@%%%@%#%*   
+       #%%   *    @%+*   %@@@@%%##%     
+        **#*=:-*  @#*   %%%%%%%%%       
+           %%#*# %%*#  ++%#  %@%        
+           *=++=%@%*%@%:.-* ###         
+           *++*%%@#*%+%#%##             
+           **+#%#@##@@#+=+              
+          %##*## %#%@%#+=               
+         +    ++*%+*#%#+=               
+         *=   -+%#+ +*###*              
+           =*%@@@##@@+:                 
+               #@@@  **-::              
+               %@@*                     
+               @@@                      
+              *@@%                      
+              @@@+                      
+              @#%                       
+              *+                        
+              *=                        
+              +=                        
+              :                         
+             +:                         
+             =+                         
+            @@@                         
+           *@@@                         
+---
+              BAAAA                     
+            HHAAEEEBBAAAAAA             
+           HHHAEFFFFFFFFEEEBAAAAA       
+          HHHBAEFFFEEEEEPPFFFFFEEBAA    
+         HHHHABFFFEEAAAPNNEBEEEFFFGA    
+         HHHHAEFFFEEAAPNPPAAAEFFFFGA    
+         HHHBAFFFEOAAAPAAABPPFFFFFBA    
+        HHGHAAEFFFEAAAAABPNNNPFFFFAB    
+        HHHHAEFFFFEAABPPPNNPEEFFFFA     
+         HHBAEFFFFEEENNBPPEAEEFFFAB     
+          HBAABEEEEEFEPEEEEEEFFFGA      
+        NONNNPPPBAAAABEEEEEFFFFFBB      
+      NMKKKJJLONNNPEFFEBBAAABBBBA       
+    NMLKKJKKKKLJONONPGFPPPNE BBBB       
+   MKKKKKJJJJLJKKJLNMOONONNNN           
+ NJJLLLLKJJMOLJKKKKMLKJOMJMOOJO         
+NKKJLLLLOLNNOMLKKKKLLMJLMJKMLLJLO       
+OLLJKKKJJNNNOMKKKJJJJLJJLLJNMJKKKL      
+POOMJKKKKJMNOOOLJJLMMLJKKKONOMLLLMMM    
+  OOOMJJLJLMNOMJJJLLJJLLJLPNOOOMLLJKM   
+   NOOOOOLLONOOOOMLJLLJJMN  NNOLJKKKKO  
+      NNNNPPAAAAAOLMMMMLJO   NOMJLJKL   
+      PNPEGFNAAAAPEEENNPNP  NBAANLOMN   
+      PEHIICGGENNGHHGGFGGFFEPAAAAPP     
+     DDDDDDDDIIIIIIICPNPIIHPNNNBNF      
+   DDDD DDDDDDIIIIIIHMJNIIIIIIII        
+  DDD  DDDDDDDIIIHHHELJEIIIDDDDDDD      
+ IDDDDDDIIIIIIIIHHHHPJJHIIIDDDDDDDDDD   
+ HIDDDDDDIIHICHH   HOKMHIIIIIDDDDDDDDDD 
+  HIIDDIDDII       HMKN   IIIIIIIDDDD DD
+   CIIDIIDDD       ELK        HHHIIIDDDD
+    CIIDDIIDI      PKJ       CCIIIIDDDD 
+      IIDDDIIH     OKM      IIDDDDIIDI  
+       HIIIIIDI   GMKN     IIDDIIDDDC   
+       HII   G    PLJE   IHHIIIDDDI     
+        IIIEPANN  NKL   IIIIIDIID       
+           NOMMO HOKN  HPEI  III        
+           PPPOOOPMKPPNBABP DDI         
+           PNNMLNPLKPPMMOLP             
+           PNNLMFNKLNOLNNP              
+          NOMMJN OKONMLNO               
+         G    NEPLKPEOJON               
+         GB   EGPJK GPLLMO              
+           BGGFFPMOFFGA                 
+               GEPE  GGBAB              
+               GEEG                     
+               EPE                      
+              GEPE                      
+              GEEG                      
+              PNN                       
+              HG                        
+              GG                        
+              HG                        
+              B                         
+             HB                         
+             GG                         
+            GEF                         
+           GFEF                         
