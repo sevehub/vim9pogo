@@ -96,11 +96,11 @@ The character with the monitor head on a pogo stick appears beside the page when
 
 ## Plugin manager data
 
-The dashboard calls `plum#Stats()` of vim9-plum, which returns the version of the manager, the time of the last activation in milliseconds, the last install or update run, and one entry for every listed plugin with its name, directory, pin, filetypes, whether it is installed and loaded, and its load time. The function is part of the diff that accompanies this plugin, and any other manager can provide the same dictionary under the same name.
+The dashboard calls `plum#Stats()` of [vim9-plum](https://github.com/sevehub/vim9-plum), which returns the version of the manager, the time of the last activation in milliseconds, the last install or update run, and one entry for every listed plugin with its name, directory, pin, filetypes, whether it is installed and loaded, and its load time. 
 
 ## Status and limits
 
-The data sources, the layout, the key mappings and the link to vim9-plum were checked headless on Vim 9.1 under Linux with a prepared viminfo file, a script with errors and a set of local test plugins. How the colors look in a real terminal, the GUI and Windows have not been tried. The ASCII mascot assumes a dark background. Load times are measured around `:packadd`, so they cover the plugin scripts of a plugin but not the lazy loading that happens later. The page is a buffer like any other, so a resize redraws it, but it is not live: `r` refreshes it.
+The ASCII mascot assumes a dark background. Load times are measured around `:packadd`, so they cover the plugin scripts of a plugin but not the lazy loading that happens later. The page is a buffer like any other, so a resize redraws it, but it is not live: `r` refreshes it.
 
 ## License
 
